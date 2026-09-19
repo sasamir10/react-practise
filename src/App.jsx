@@ -1,11 +1,12 @@
-import Gallery, { Profile } from "./components/Gallery";
+import Avatar from "./components/Avatar";
 
 function App() {
     return (
         <>
-            <h1>This React Component</h1>
-            <Gallery />
-            <Profile />
+            <Avatar
+                person={{ name: "Lin Lanying", imageId: "1bX5QH6" }}
+                size={100}
+            />
         </>
     );
 }
