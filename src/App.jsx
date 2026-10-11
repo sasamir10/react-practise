@@ -1,15 +1,11 @@
-export default function Toolbar() {
+import State from "./components/State";
+
+function App() {
     return (
-        <div
-            className="Toolbar"
-            onClick={() => {
-                console.log("You clicked on the toolbar!");
-            }}
-        >
-            <button onClick={() => alert("Playing!")}>Play Movie</button>
-            <button onClick={() => console.log("This is in console")}>
-                Console clicked
-            </button>
-        </div>
+        <>
+            <State />
+        </>
     );
 }
+
+export default App;
