@@ -1,9 +1,7 @@
-import State from "./components/State";
-
 function App() {
     return (
         <>
-            <State />
+            <h1>This is Like button</h1>
         </>
     );
 }
