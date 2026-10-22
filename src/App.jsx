@@ -1,7 +1,10 @@
+import Profile from "./components/Profile";
+
 function App() {
     return (
         <>
-            <h1>This is Like button</h1>
+            <h1>My Website</h1>
+            <Profile />
         </>
     );
 }
