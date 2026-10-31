@@ -1,11 +1,10 @@
-const Profile = () => {
+function Profile() {
     return (
-        <>
-            <h2>My Profile</h2>
-            <p>Name: Samir</p>
-            <p>Role: React Frontend Developer</p>
-        </>
+        <img
+            src="https://react.dev/images/docs/scientists/MK3eW3As.jpg"
+            alt="Katherine Johnson"
+        />
     );
-};
+}
 
 export default Profile;
