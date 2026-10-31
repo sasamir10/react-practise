@@ -1,10 +1,12 @@
-import Gallery from "./components/Gallery";
+import { Gallery as Image } from "./components/Gallery";
+import Samir from "./components/Profile";
 
 function App() {
     return (
         <>
             <div>Hola! Samir</div>
-            <Gallery />
+            <Image />
+            <Samir />
         </>
     );
 }

@@ -10,4 +10,4 @@ function Gallery() {
     );
 }
 
-export default Gallery;
+export { Gallery };
