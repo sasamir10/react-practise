@@ -1,4 +1,5 @@
 import { Gallery as Image } from "./components/Gallery";
+import PackingList from "./components/PackingList";
 import Samir from "./components/Profile";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
             <div>Hola! Samir</div>
             <Image />
             <Samir />
+            <PackingList />
         </>
     );
 }
