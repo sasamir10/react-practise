@@ -1,14 +1,11 @@
-import { Gallery as Image } from "./components/Gallery";
-import PackingList from "./components/PackingList";
-import Samir from "./components/Profile";
+import Avatar from "./components/Avatar";
 
 function App() {
     return (
         <>
             <div>Hola! Samir</div>
-            <Image />
-            <Samir />
-            <PackingList />
+
+            <Avatar />
         </>
     );
 }
