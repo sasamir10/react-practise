@@ -1,17 +1,16 @@
-export default function MyComponent() {
+function Item({ name, isPacked }) {
+    return <li className="item">{isPacked ? name + "✅" : name}</li>;
+}
+
+export default function PackingList() {
     return (
-        <>
-            <h1>Hedy Lamarrs Todos</h1>
-            <img
-                src="https://react.dev/images/docs/scientists/yXOvdOSs.jpg"
-                alt="Hedy Lamarr"
-                className="photo"
-            ></img>
+        <section>
+            <h1>Sally Ride's Packing List</h1>
             <ul>
-                <li>Invent new traffic lights</li>
-                <li>Rehearse a movie scene</li>
-                <li>Improve the spectrum technology</li>
+                <Item isPacked={true} name="Space suit" />
+                <Item isPacked={true} name="Helmet with a golden leaf" />
+                <Item isPacked={false} name="Photo of Tam" />
             </ul>
-        </>
+        </section>
     );
 }
