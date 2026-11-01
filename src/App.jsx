@@ -1,11 +1,16 @@
 export default function App() {
-    const LogIn = "samir";
+    const value = ["Messi", "Rohit", "Virat"];
 
     return (
         <>
-            <h1>Hola! Welcome to my Page</h1>
-
-            {LogIn.length > 0 && <h3>You are logged in already...</h3>}
+            {value.map((product, index) => {
+                return (
+                    <>
+                        <h2 key={index}> {product} </h2>
+                        <p>{index}</p>
+                    </>
+                );
+            })}
         </>
     );
 }
