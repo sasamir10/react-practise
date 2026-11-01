@@ -1,12 +1,11 @@
-import PackingList from "./components/PackingList";
+export default function App() {
+    const LogIn = "samir";
 
-function App() {
     return (
         <>
-            <h1>Hola!</h1>
-            <PackingList />
+            <h1>Hola! Welcome to my Page</h1>
+
+            {LogIn.length > 0 && <h3>You are logged in already...</h3>}
         </>
     );
 }
-
-export default App;
