@@ -1,11 +1,12 @@
-function UserInfo({ name, profession }) {
+function User({ name, profession, age, location }) {
     return (
         <div>
-            <h2>User Information</h2>
-            <p>Name: {name}</p>
-            <p>Profession: {profession}</p>
+            <h3>{name}</h3>
+            <p>{profession}</p>
+            <p>{age}</p>
+            <p>{location}</p>
         </div>
     );
 }
 
-export default UserInfo;
+export default User;
