@@ -1,7 +1,7 @@
-function User({ name, profession, age, location }) {
+function User({ person, profession, age, location }) {
     return (
         <div>
-            <h3>{name}</h3>
+            <h3>{person}</h3>
             <p>{profession}</p>
             <p>{age}</p>
             <p>{location}</p>
