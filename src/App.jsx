@@ -1,12 +1,9 @@
-import Greeting from "./components/Greeting";
+let count = 0;
 
 export default function App() {
-    return (
-        <>
-            <Greeting naam="Samir" />
-            <Greeting naam="Messi" />
-            <Greeting naam="Virat" />
-            <Greeting />
-        </>
-    );
+    count++;
+
+    console.log(count);
+
+    return <h1>Hello React</h1>;
 }
