@@ -1,10 +1,10 @@
-function Greeting({ name, profession }) {
+export default function Greeting({ naam = "Bunny" }) {
     return (
-        <div>
-            <h2>Hello, {name}!</h2>
-            <p>I am learning {profession}.</p>
-        </div>
+        <>
+            <h3>
+                {/* Impure component */}
+                Hola! {naam}, your lucky number is {Math.random(3)}{" "}
+            </h3>
+        </>
     );
 }
-
-export default Greeting;

@@ -1,23 +1,12 @@
-import Product from "./components/Product";
+import Greeting from "./components/Greeting";
 
-function App() {
-    const products = [
-        { id: 1, name: "Laptop", price: 50000 },
-        { id: 2, name: "Mobile", price: 20000 },
-        { id: 3, name: "Headphones", price: 3000 },
-    ];
-
+export default function App() {
     return (
-        <div>
-            {products.map((product) => (
-                <Product
-                    key={product.id}
-                    name={product.name}
-                    price={product.price}
-                />
-            ))}
-        </div>
+        <>
+            <Greeting naam="Samir" />
+            <Greeting naam="Messi" />
+            <Greeting naam="Virat" />
+            <Greeting />
+        </>
     );
 }
-
-export default App;
