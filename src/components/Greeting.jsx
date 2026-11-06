@@ -1,10 +1,17 @@
-export default function Greeting({ naam = "Bunny" }) {
+export default function Greeting() {
+    /* function handleClick() {
+        console.log("The button is Clicked!");
+    } */
+
     return (
         <>
-            <h3>
-                {/* Impure component */}
-                Hola! {naam}, your lucky number is {Math.random(3)}{" "}
-            </h3>
+            <button
+                onClick={() => {
+                    console.log("Button clicked by Arrow function");
+                }}
+            >
+                Use Me!
+            </button>
         </>
     );
 }

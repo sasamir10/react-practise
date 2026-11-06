@@ -1,9 +1,10 @@
-let count = 0;
+import Greeting from "./components/Greeting";
 
 export default function App() {
-    count++;
-
-    console.log(count);
-
-    return <h1>Hello React</h1>;
+    return (
+        <>
+            <h2>Hola! Welcome to my Page...</h2>
+            <Greeting />
+        </>
+    );
 }
