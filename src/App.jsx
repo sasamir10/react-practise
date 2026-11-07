@@ -1,24 +1,13 @@
-export default function App() {
-    function handleGrandparent() {
-        console.log("Grandparent Clicked");
-    }
-
-    function handleParent() {
-        // event.stopPropagation();
-        console.log("Parent Clicked");
-    }
-
-    function handleChild() {
-        console.log("Child Clicked");
-    }
-
+export default function Signup() {
     return (
-        <>
-            <div onClickCapture={handleGrandparent}>
-                <div onClickCapture={handleParent}>
-                    <button onClickCapture={handleChild}>Click me!</button>
-                </div>
-            </div>
-        </>
+        <form
+            onSubmit={(event) => {
+                event.preventDefault();
+                console.log("Default behaviour worked");
+            }}
+        >
+            <input />
+            <button>Send</button>
+        </form>
     );
 }
