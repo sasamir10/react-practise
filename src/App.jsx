@@ -1,11 +1,24 @@
-import AlertBox from "./components/AlertBox";
-
 export default function App() {
+    function handleGrandparent() {
+        console.log("Grandparent Clicked");
+    }
+
+    function handleParent() {
+        // event.stopPropagation();
+        console.log("Parent Clicked");
+    }
+
+    function handleChild() {
+        console.log("Child Clicked");
+    }
+
     return (
         <>
-            <h2>Hola! Welcome to my Page...</h2>
-            <AlertBox message="Be Alert!">Alert message</AlertBox>
-            <AlertBox message="Play Movie">Play message</AlertBox>
+            <div onClickCapture={handleGrandparent}>
+                <div onClickCapture={handleParent}>
+                    <button onClickCapture={handleChild}>Click me!</button>
+                </div>
+            </div>
         </>
     );
 }

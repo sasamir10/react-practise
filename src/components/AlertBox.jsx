@@ -1,11 +1,3 @@
-export default function AlertBox({ message, children: childrennn }) {
-    function handleClick() {
-        alert(message);
-    }
-
-    return (
-        <>
-            <button onClick={handleClick}>{childrennn}</button>
-        </>
-    );
+export default function Button({ onSmash }) {
+    return <button onClick={onSmash}>Click Me</button>;
 }
